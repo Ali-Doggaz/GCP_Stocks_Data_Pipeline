@@ -13,9 +13,6 @@
 - **Pub/Sub**: Acts as a message broker, decoupling data collection from processing. Supports scalable message queuing.
 - **Dataflow (Stream)**: Processes and transforms data streams, grouping by fixed window sizes of 5 seconds for efficient aggregation.
   
-    **Batch**
-  ![image](https://github.com/Ali-Doggaz/GCP_Stocks_Data_Pipeline/assets/62618334/92b8d7d6-fbfe-4491-aa9f-f673346d736b)
-    **Stream**
   ![image](https://github.com/Ali-Doggaz/GCP_Stocks_Data_Pipeline/assets/62618334/98554a95-cb0d-4377-8d5f-5b2a21dbb1c6)
 
 - **Error Handling**: Errors are extracted, flattened, and stored in a BigQuery 'deadletter' table for later analysis.
@@ -23,7 +20,8 @@
 ### Batch Data Processing
 - **Cloud Storage**: Stores batch data in JSON format, each file containing transactional data.
 - **Dataflow (Batch)**: Triggered manually to process stored batch data, performing cleansing and transformation.
-
+  ![image](https://github.com/Ali-Doggaz/GCP_Stocks_Data_Pipeline/assets/62618334/92b8d7d6-fbfe-4491-aa9f-f673346d736b)
+  
 ## Storage
 - **BigQuery**: Central data warehousing solution where both streaming and batch processed data are consolidated into a single table for analysis.
 
