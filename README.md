@@ -1,6 +1,7 @@
 # Architecture Analysis
 
-![image](https://github.com/Ali-Doggaz/GCP_Stocks_Data_Pipeline/assets/62618334/34e21e21-1586-4e6e-a19f-a261df4eb037)
+![Batch](https://github.com/Ali-Doggaz/GCP_Stocks_Data_Pipeline/assets/62618334/90cc9779-20f7-4325-ab65-0f981cc889ee)
+
 
 ## Data Source
 - **Finnhub API**: Data is ingested from the Finnhub API, and streamed in real-time using Websocket connections, ensuring minimal latency.
